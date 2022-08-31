@@ -20,18 +20,19 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('post/{id}', [\App\Http\Controllers\PostController::class, 'get']);
+Route::get('posts', [\App\Http\Controllers\PostController::class, 'list']);
 Route::post('post', [\App\Http\Controllers\PostController::class, 'create']);
 Route::put('post/{id}', [\App\Http\Controllers\PostController::class, 'update']);
 Route::delete('post/{id}', [\App\Http\Controllers\PostController::class, 'delete']);
 
 Route::get('audio/{id}', [\App\Http\Controllers\AudioController::class, 'get']);
+Route::get('audios', [\App\Http\Controllers\AudioController::class, 'list']);
 Route::post('audio', [\App\Http\Controllers\AudioController::class, 'create']);
 Route::put('audio/{id}', [\App\Http\Controllers\AudioController::class, 'update']);
 Route::delete('audio/{id}', [\App\Http\Controllers\AudioController::class, 'delete']);
 
 Route::get('genre/{id}', [\App\Http\Controllers\GenreController::class, 'get']);
+Route::get('genres', [\App\Http\Controllers\GenreController::class, 'list']);
 Route::post('genre', [\App\Http\Controllers\GenreController::class, 'create']);
 Route::put('genre/{id}', [\App\Http\Controllers\GenreController::class, 'update']);
 Route::delete('genre/{id}', [\App\Http\Controllers\GenreController::class, 'delete']);
-
-

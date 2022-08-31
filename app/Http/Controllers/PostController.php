@@ -36,7 +36,7 @@ class PostController extends Controller
     }
 
     public function list(){
-        return Post::all();
+        return Post::with('audio.genre')->get();
     }
     //
 }
