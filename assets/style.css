@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(245, 224, 242) !important;
+}
+
+.post_creater{
+    display: none;
+}
+
+.post_creater.active{
+    display:block;
+}
+
+.audio_creater{
+    display: none;
+}
+
+.audio_creater.active{
+    display:block;
+}
+.renderedGenre{
+    width: auto;
+    height: auto;
+    background-color: whitesmoke;
+}
+
+.renderedPost{
+    width: auto;
+    height: auto;
+    margin: 15px;
+    background-color: rgb(253, 232, 249);
+}
+
+.g_user{
+    color: grey;
+}
+
+.g_tags{
+    margin-left: 5px;
+    color: grey;
+}
+
+.g_tags_b{
+    font-size: 20px;
+    color: black;
+}
+
+.b_title{
+    color: goldenrod;
+}
